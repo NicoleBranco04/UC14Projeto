@@ -1,0 +1,166 @@
+* {
+    margin: 0px; /*Margem externa das caixas*/
+    padding: 0px; /*Margem interna das caixas*/
+    box-sizing: border-box; /*Ajuste de padding das caixas sem a soma com a largura*/
+  }
+  
+  header {
+    height: 300px; /* Aplicar altura ao cabeçalho*/
+    background-image: url("../img/metgala2.jpg"); /*Aplicar imagem  de fundo ao cabeçalho*/
+    background-size: 100% cover; /*ajustar o tamanho da imagem do fundo*/
+    background-position-y: -500px; /*alterar a posição vertical da imagem*/
+    padding-top: 100px;
+    text-align: center;
+  }
+  
+  h1 {
+    font-family: "Arial Narrow";
+    font-size: 30pt;
+    color: blanchedalmond;
+    /*vamos aplicar sombra*/
+    text-shadow: 2px 5px 7px #FFCFD9;
+    /*Primeiro elemento é a posição horizontal*/
+    /*Segundo elemento é a posição vertical*/
+    /*terceiro elemento é efeito esfumçado*/
+  }
+  
+  /* Vamos fazer a formatação da barra de navegação*/
+  nav {
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  nav ul li {
+    /*dispor os elementos em linha*/
+    display: inline-block;
+    /*espaço entre os links*/
+    margin: 5px;
+  }
+  
+  nav ul li a {
+    color: whitesmoke;
+    font-family: arial;
+    /*tirar o sublinhado*/
+    text-decoration: none;
+  }
+  
+  main {
+    padding: 20px;
+    background-color: #D4A7B0;
+
+  }
+  
+  footer {
+    background-color: #6B4950;
+    /* Permitir com que o rodapé fique com seu conteúdo flexível */
+    display: flex;
+    /* Dispor o conteúdo em linha */
+    flex-direction: row;
+    /* Ajustar  o conteúdo ao centro com Justify-content e Aliegn-Items */
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+  }
+
+  main p{
+      font-size: 15pt;
+      text-align: left;
+      padding-top: 5px;
+      margin: 4px;
+      width: 75%;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  
+  #endereco {
+    font-family: arial;
+    font-size: 15pt;
+    color: blanchedalmond;
+    width: 300px;
+    text-align: center;
+  }
+  #redes {
+    position: absolute;
+    right: 50px;
+  }
+  
+  #redes ul {
+    /* Retirar as bolinhas de marcação */
+    list-style: none;
+  }
+  
+  /*  Vamos dispor a imagens das redes em linha com display inline-block */
+  #redes ul li {
+    display: inline-block;
+    margin: 10px;
+  }
+  #redes ul li a img {
+    width: 50px;
+    height: 50px;
+  }
+
+  /* ============Inicio da formatação CSS para o home=========== */
+
+h2 {
+    font-family: "Lucida Sans";
+    font-size: 20pt;
+    border-bottom: 1px dashed darkred;
+    margin: 30px;
+  }
+  
+  main p {
+    margin: 15px;
+    width: 80%;
+    /* para alinhar um objeto ao centro, você pode usar margin-left e margin-right auto para os dois */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    font-family: "Lucinda Sans";
+    font-size: 12pt;
+    /* Espaçamento entre linhas com o comando line-height */
+    line-height: 30px;
+  }
+
+  h3{
+    font-family: "Lucida Sans";
+    font-size: 20pt;
+    border-bottom: 1px dashed darkred;
+    margin: 30px; 
+  }
+
+  main p {
+    margin: 15px;
+    width: 80%;
+    /* para alinhar um objeto ao centro, você pode usar margin-left e margin-right auto para os dois */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    font-family: "Lucinda Sans";
+    font-size: 12pt;
+    /* Espaçamento entre linhas com o comando line-height */
+    line-height: 30px;
+  }
+
+  #imghome {
+    text-align: center;
+  }
+  
+  #imghome img {
+    width: 200px; /*largura da imagem*/
+    height: 200px; /*altura da imagem*/
+    border-radius: 300px; /* arredondar os cantos das imagens*/
+    /* colocar as imagens um pouco opcas */
+    opacity: 0.7; /* colocar a imagem em 70% de opacacidade*/
+    margin: 20px;
+    /* Efeito de transição. Isso fará com que a imagem tenha uma animação quando passar o mouse sobre ela */
+    transition: ease 1s;
+  }
+  
+  #imghome img:hover {
+    opacity: 1;
+    width: 300px;
+    height: 300px;
+  }
+
+  /* ============FIM DA HOME============== */
